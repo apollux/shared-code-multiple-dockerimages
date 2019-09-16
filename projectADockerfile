@@ -1,0 +1,7 @@
+FROM alpine
+
+WORKDIR /app
+COPY projectA/ projectA/
+COPY shared/ shared
+CMD cat /app/projectA/* && cat /app/shared/*
+
